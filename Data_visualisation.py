@@ -15,7 +15,12 @@ plt.rcParams["figure.figsize"] = (10, 5)
 
 
 def get_dataset_path() -> Path:
-    root = Path(__file__).resolve().parents[1]
+    current = Path(__file__).resolve()
+    root = current.parent.parent if current.parent.name == "src" else current.parent
+    for folder in ["clean_dataset", "Cleaned_Dataset"]:
+        p = root / folder / "cleaned_data.csv"
+        if p.exists():
+            return p
     return root / "clean_dataset" / "cleaned_data.csv"
 
 

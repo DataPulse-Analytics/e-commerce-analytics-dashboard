@@ -3,7 +3,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
+_CURRENT = Path(__file__).resolve()
+ROOT = _CURRENT.parent.parent if _CURRENT.parent.name == "src" else _CURRENT.parent
 RAW_FILE = ROOT / "Dataset" / "raw_data.csv"
 OUTPUT_FILE = ROOT / "clean_dataset" / "cleaned_data.csv"
 

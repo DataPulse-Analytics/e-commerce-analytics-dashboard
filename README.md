@@ -20,7 +20,10 @@ product categories, payment methods, customer behaviour, returns, and churn.
 Project Proposal/       Project proposal document
 Dataset/                Original transaction CSV
 clean_dataset/          Cleaned transaction CSV
-src/                    Cleaning, analysis, and visualization scripts
+PowerBI Dashboard/      Power BI Dashboard project
+data_cleaning.py        Data cleaning script
+Data_analysis.py        Business analysis script
+Data_visualisation.py   Data visualization script
 dashboard/              Interactive Streamlit application
 requirements.txt        Python dependencies
 ```
@@ -31,7 +34,7 @@ requirements.txt        Python dependencies
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-python src/data_cleaning.py
+python data_cleaning.py
 streamlit run dashboard/app.py
 ```
 

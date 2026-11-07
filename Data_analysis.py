@@ -19,7 +19,9 @@ import pandas as pd
 def get_project_root() -> Path:
     """Returns the project root directory."""
     current_path = Path(__file__).resolve()
-    return current_path.parent.parent
+    if current_path.parent.name == "src":
+        return current_path.parent.parent
+    return current_path.parent
 
 
 def get_dir(root: Path, *candidates: str) -> Path:
