@@ -1,1 +1,0 @@
-pandas>=2.0\nnumpy>=1.24\nmatplotlib>=3.7\nseaborn>=0.12\nplotly>=5.18\nstreamlit>=1.32\n
