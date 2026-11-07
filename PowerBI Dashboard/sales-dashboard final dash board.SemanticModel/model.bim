@@ -1,0 +1,316 @@
+{
+  "compatibilityLevel": 1606,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DataFilePath\",\"Sales\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DataFilePath",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ],
+        "expression": "\"C:\\PowerBI\\cleaned_data.csv\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "ab7c8579-ed1b-4f10-b095-69d307746166"
+      }
+    ],
+    "sourceQueryCulture": "en-IN",
+    "tables": [
+      {
+        "name": "Sales",
+        "columns": [
+          {
+            "name": "customer_id",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "28ccdfc6-f06f-4a11-ae6e-d628b68e73f8",
+            "sourceColumn": "customer_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchase_date",
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd HH:mm",
+            "lineageTag": "d885e4ab-6dcb-42a9-a333-022116ed1c32",
+            "sourceColumn": "purchase_date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "product_category",
+            "dataType": "string",
+            "lineageTag": "fa71561c-7e4a-420f-85ca-1967a8468db7",
+            "sourceColumn": "product_category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "product_price",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f4361f41-1030-417f-9aa8-6eddeea13c5f",
+            "sourceColumn": "product_price",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "quantity",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c480dcfe-9c8e-4a9f-a5e4-fdb17ef2cf31",
+            "sourceColumn": "quantity",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "total_purchase_amount",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "273d842d-4b66-4313-b9a2-838361e6d04f",
+            "sourceColumn": "total_purchase_amount",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "payment_method",
+            "dataType": "string",
+            "lineageTag": "d41df393-bf0b-4cef-8d90-e7999a94f573",
+            "sourceColumn": "payment_method",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customer_age",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ef0b2e65-0748-4160-97ca-f46c749fb4df",
+            "sourceColumn": "customer_age",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "returns",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6e4e9610-2d6c-4c72-b9f6-33f598225348",
+            "sourceColumn": "returns",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customer_name",
+            "dataType": "string",
+            "lineageTag": "11827925-2ee4-4751-b6af-0d75450aa028",
+            "sourceColumn": "customer_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "gender",
+            "dataType": "string",
+            "lineageTag": "e5dd379c-8087-4021-9324-d3a8132559c9",
+            "sourceColumn": "gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "churn",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6a9e1ce8-4dd0-44ea-b838-aa762086fcf7",
+            "sourceColumn": "churn",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchase_year",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "188181bd-c6e7-4cd6-abc0-e90e594209ca",
+            "sourceColumn": "purchase_year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchase_month",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5139e14c-8c8b-46fe-97f3-614621b2a61d",
+            "sourceColumn": "purchase_month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchase_month_name",
+            "dataType": "string",
+            "lineageTag": "f324b236-0eef-4587-8ee7-32a4d92fc7e2",
+            "sortByColumn": "purchase_month",
+            "sourceColumn": "purchase_month_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchase_year_month",
+            "dataType": "string",
+            "lineageTag": "12b42c0f-1bda-4f1f-804b-fb7c69921192",
+            "sourceColumn": "purchase_year_month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchase_day_name",
+            "dataType": "string",
+            "lineageTag": "082b7cb5-6e98-45d6-b783-25f39bd29375",
+            "sourceColumn": "purchase_day_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchase_hour",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "847807c2-ec19-4d67-a228-7fb39ff0ab67",
+            "sourceColumn": "purchase_hour",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "line_item_total",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b79cdb3c-e1c9-4e56-992c-6aff195259ba",
+            "sourceColumn": "line_item_total",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "net_purchase_amount",
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a4290bde-2937-4e4b-ae90-7e24d6f78cbc",
+            "sourceColumn": "net_purchase_amount",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "return_status",
+            "dataType": "string",
+            "lineageTag": "94989a43-da18-44a1-9665-aab6a7361806",
+            "sourceColumn": "return_status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "churn_status",
+            "dataType": "string",
+            "lineageTag": "5864e043-8511-4b55-ad2b-4be5e4842780",
+            "sourceColumn": "churn_status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "age_group",
+            "dataType": "string",
+            "lineageTag": "aa0398cd-e742-4090-aa03-5b171274e25e",
+            "sourceColumn": "age_group",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "21a0175d-17f6-41b2-b5f7-4fa9b85991f3",
+        "measures": [
+          {
+            "name": "Gross Sales",
+            "expression": "SUM(Sales[total_purchase_amount])",
+            "formatString": "#,0.00",
+            "lineageTag": "051b85a4-c4da-4d67-b3ce-cd0fdd7d145c"
+          },
+          {
+            "name": "Net Sales",
+            "expression": "SUM(Sales[net_purchase_amount])",
+            "formatString": "#,0.00",
+            "lineageTag": "5232c566-4ad6-4c91-8810-9d3cd6db6535"
+          },
+          {
+            "name": "Returned Purchase Value",
+            "expression": "[Gross Sales] - [Net Sales]",
+            "formatString": "#,0.00",
+            "lineageTag": "19350163-4175-4cde-ad0c-bed5b28fe94a"
+          },
+          {
+            "name": "Purchase Records",
+            "expression": "COUNTROWS(Sales)",
+            "formatString": "#,0",
+            "lineageTag": "729f4be2-3b07-4be7-96d1-7d17bf954889"
+          },
+          {
+            "name": "Customers",
+            "expression": "DISTINCTCOUNT(Sales[customer_id])",
+            "formatString": "#,0",
+            "lineageTag": "9cf50406-93fc-4e83-8b35-971a0dc0ec21"
+          },
+          {
+            "name": "Units",
+            "expression": "SUM(Sales[quantity])",
+            "formatString": "#,0",
+            "lineageTag": "fd84df01-5e00-4641-96d0-a7072f098061"
+          },
+          {
+            "name": "Average Purchase Value",
+            "expression": "DIVIDE([Gross Sales], [Purchase Records])",
+            "formatString": "#,0.00",
+            "lineageTag": "82532fd2-338c-4879-b9b2-fb32d6fc6a8f"
+          },
+          {
+            "name": "Returned Records",
+            "expression": "CALCULATE([Purchase Records], Sales[returns] = 1)",
+            "formatString": "#,0",
+            "lineageTag": "20d520f4-017c-45bb-ab4e-6ff1bd516238"
+          },
+          {
+            "name": "Return Rate",
+            "expression": "DIVIDE([Returned Records], [Purchase Records])",
+            "formatString": "0.0%",
+            "lineageTag": "f379fa33-fb35-4bbc-bff2-86611fe89fde"
+          },
+          {
+            "name": "Churned Customers",
+            "expression": "CALCULATE([Customers], Sales[churn] = 1)",
+            "formatString": "#,0",
+            "lineageTag": "4029c33b-48fa-4ab9-90fc-ed19002f310d"
+          },
+          {
+            "name": "Customer Churn Rate",
+            "expression": "DIVIDE([Churned Customers], [Customers])",
+            "formatString": "0.0%",
+            "lineageTag": "a712b874-54ec-479b-a9ba-d2bf44518ca6"
+          },
+          {
+            "name": "Net Sales per Customer",
+            "expression": "DIVIDE([Net Sales], [Customers])",
+            "formatString": "#,0.00",
+            "lineageTag": "b3386361-0893-49b9-9bd3-aa9d82059b94"
+          },
+          {
+            "name": "Calculated Line Item Value",
+            "expression": "SUM(Sales[line_item_total])",
+            "formatString": "#,0.00",
+            "lineageTag": "cb48a6e7-85ad-466e-9512-851198e0891e"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Sales",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFilePath), [Delimiter=\",\", Columns=23, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"customer_id\", Int64.Type}, {\"purchase_date\", type datetime}, {\"product_category\", type text}, {\"product_price\", Int64.Type}, {\"quantity\", Int64.Type}, {\"total_purchase_amount\", Int64.Type}, {\"payment_method\", type text}, {\"customer_age\", Int64.Type}, {\"returns\", Int64.Type}, {\"customer_name\", type text}, {\"gender\", type text}, {\"churn\", Int64.Type}, {\"purchase_year\", Int64.Type}, {\"purchase_month\", Int64.Type}, {\"purchase_month_name\", type text}, {\"purchase_year_month\", type text}, {\"purchase_day_name\", type text}, {\"purchase_hour\", Int64.Type}, {\"line_item_total\", Int64.Type}, {\"net_purchase_amount\", Int64.Type}, {\"return_status\", type text}, {\"churn_status\", type text}, {\"age_group\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

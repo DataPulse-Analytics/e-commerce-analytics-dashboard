@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "d4db4173331d022ca0a0",
+  "position": {
+    "x": 408.59023559610642,
+    "y": 9.1086995196584226,
+    "z": 35,
+    "height": 79.375810099880539,
+    "width": 727.39471878415122,
+    "tabOrder": 35
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Returns Analysis Dashboard",
+                    "textStyle": {
+                      "fontFamily": "Calibri",
+                      "fontSize": "32pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
